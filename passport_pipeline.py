@@ -1,4 +1,3 @@
-import os
 import string
 import random
 import uuid
@@ -30,7 +29,7 @@ if __name__ == "__main__":
                         'age': ages} 
     
     df = pd.DataFrame(application_dict)
-    df.to_csv("passport_applications.csv")
+    df.to_csv("passport_applications.csv", index=False)
 
 
 
